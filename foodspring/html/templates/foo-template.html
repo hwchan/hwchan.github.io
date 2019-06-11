@@ -1,0 +1,32 @@
+<tbody><tr class="foo-top-row">
+    <td>
+        <a href="#">Rosemary Bread</a><br>
+        Quiznos Bakery
+    </td>
+    <td class="text-center align-middle">5</td>
+    <td class="text-center align-middle">$3.50/loaf</td>
+    <td class="text-center align-middle"></td>
+    <td class="text-center align-middle">20/10%</td>
+    <td class="text-center align-middle">-</td>
+    <td>
+        <button class="btn btn-outline-primary btn-row float-right" type="button">+ Add</button>
+        <button class="btn btn-primary btn-row float-right" type="button">10</button>
+    </td>
+</tr>
+<tr class="foo-bottom-row" ng-show="showMe">
+    <td colspan="3">
+        Produced Dec 1, 2019 in Ontario<br>
+        Per Serving Calories 20g <i class="fa fa-question-circle"></i>
+    </td>
+    <td class="text-center align-middle"></td>
+    <td colspan="3">
+        <button class="btn btn-outline-primary btn-row float-right" type="button">Request sample</button>
+        <button class="btn btn-outline-primary btn-row float-right" type="button">Message Supplier</button>
+    </td>
+</tr>
+<tr class="foo-expand-row" ng-click="showMe = !showMe">
+    <td colspan="3"></td>
+    <td class="text-center align-middle"><i ng-class="showMe ? 'fa fa-angle-up fa-xs' : 'fa fa-angle-down fa-xs'" class="fa fa-angle-down fa-xs"></i></td>
+    <td colspan="3"></td>
+</tr>
+</tbody>

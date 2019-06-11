@@ -1,0 +1,412 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/app.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Foodspring</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Order<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-history.html">Order History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Invoices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="supplies.html">Suppliers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Messages</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<main role="main" class="container">
+
+    <nav class="nav nav-tabs mt-1" id="myTab" role="tablist">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New Orders</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Saved Orders</a>
+            <a class="nav-link float-right" style="margin-left:840px" id="cart-tab" data-toggle="tab" href="#cart" role="tab" aria-controls="cart" aria-selected="false">
+                <i class="fa fa-shopping-cart"></i> <span style="font-size:x-small">Items | $0</span>
+            </a>
+    </nav>
+
+
+
+    <div class="tab-content container border" id="myTabContent">
+
+        <!--tab1-->
+        <div class="tab-pane fade show mt-3 active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+
+
+            <!--tab nav-->
+            <ul class="nav nav-pills" id="fooTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="foo2-tab" data-toggle="tab" href="#foo2" role="tab" aria-controls="foo2" aria-selected="true">Your Suppliers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="foo1-tab" data-toggle="tab" href="#foo1" role="tab" aria-controls="foo1" aria-selected="false">Marketplace</a>
+                </li>
+            </ul>
+
+
+            <!--tab1 content-->
+            <div class="tab-content container mt-3" id="fooTabContent">
+                <div class="tab-pane fade" id="foo1" role="tabpanel" aria-labelledby="foo1-tab">
+                    
+                </div>
+
+                <div class="tab-pane fade show active" id="foo2" role="tabpanel" aria-labelledby="foo2-tab">
+                    
+
+
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-9">
+                                <form>
+                                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                </form>
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Description</th>
+                                            <th class="text-center">Min Order</th>
+                                            <th class="text-center">Unit Price</th>
+                                            <th class="text-center"></th>
+                                            <th class="text-center">Volume/Discount %</th>
+                                            <th class="text-center">Subtotal</th>
+                                            <th class="text-center"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody tr-row mytitle="Hello I am Title"></tbody>
+                                    <tbody tr-row mytitle="Hello I am Title"></tbody>
+                                    <tbody tr-row mytitle="Hello I am Title"></tbody>
+                                </table>
+                            </div>
+                            <div class="col-3 border">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr class="foo-header">
+                                            <td class="align-middle">List of suppliers</td>
+                                            <td><button class="btn btn-outline-primary btn-row float-right" type="button">View all</button></td>
+                                        </tr>
+                                    <!-- </tbody>
+                                    <tbody> -->
+                                        <tr>
+                                            <td>Quiznoa Bakery</td>
+                                            <td>3pm cutoff</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ASDA Fruits</td>
+                                            <td>2pm cutoff</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bob's Salmon</td>
+                                            <td>Past cutoff (11am)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                      </div>
+
+
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--tab2-->
+        <div class="tab-pane fade mt-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            
+            <!--tab nav-->
+            <ul class="nav nav-pills" id="savedTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="saved1-tab" data-toggle="tab" href="#saved1" role="tab" aria-controls="saved1" aria-selected="true">Orders</a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content container mt-3" id="savedTabContent">
+                
+
+                <div class="container">
+        
+                    <div class="row">
+                        <div class="col-9">
+                            <form>
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                            </form>
+
+                            <table class="table cart-table table-hover">
+                                
+
+                                <tbody tr-saved-row mytitle="Hello I am Title"></tbody>
+
+
+
+                                <tbody>
+                                    <tr class="foo-top-row">
+                                        <td><a href="#">Christmas</a></td>
+                                        <td colspan="3" class="text-center align-middle">
+                                                <button class="btn btn-outline-primary btn-row" type="button">Schedule</button>
+                                        </td>
+                                        <td class="text-right align-middle"></td>
+                                        <td class="text-right align-middle"></td>
+                                        <td>
+                                            <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-plus"></i></button>
+                                            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-pencil"></i></button>
+                                        </td>
+                                    </tr>
+                                
+                                    <!---->
+                                    <tr class="foo-bottom-row" ng-show="showMe">
+                                        <td class="align-middle"><a href="#">ASDA Fruits</a></td>
+                                        <td class="align-middle"><a href="#">Rosemary Bread</a></td>
+                                        <td class="text-center align-middle">$3.50/loaf</td>
+                                        <td class="text-center align-middle">-10%/20 orders</td>
+                                        <td class="text-center align-middle">10 orders</td>
+                                        <td class="text-center align-middle">$35.00 subtotal</td>
+                                        <td>
+                                            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="foo-bottom-row" ng-show="showMe">
+                                        <td class="align-middle"></td>
+                                        <td class="align-middle"><a href="#">Pink Ladies</a></td>
+                                        <td class="text-center align-middle">$1.00/dozen</td>
+                                        <td class="text-center align-middle">N/A</td>
+                                        <td class="text-center align-middle">10 orders</td>
+                                        <td class="text-center align-middle">$10.00 subtotal</td>
+                                        <td>
+                                            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                
+                                    <!---->
+                                    <tr class="foo-expand-row" ng-click="showMe = !showMe">
+                                        <td colspan="3" class="text-center align-middle"></td>
+                                        <td class="text-center align-middle"><i ng-class="showMe ? 'fa fa-angle-up fa-xs' : 'fa fa-angle-down fa-xs'" class="fa fa-angle-down fa-xs"></i></td>
+                                        <td colspan="3" class="text-center align-middle"></td>
+                                    </tr>
+                                
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="col-3 border">
+                            <div class="container">
+                                <div class="row">
+                                    <table class="table table-hover">
+                                        <tr class="foo-header">
+                                            <td>Cart Activity</td>
+                                            <td><span class="float-right">(4 items)</span></td>
+                                        </tr>
+                                        <tr class="foo-top-row" >
+                                            <td>ASDA Fruits (2)</td>
+                                            <td><span class="float-right">$45</span></td>
+                                        </tr>
+                                        <tr class="foo-bottom-row" >
+                                            <td>Rosemary Bread ($3.50/loaf)<br>10 orders</td>
+                                            <td>
+                                                <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="foo-bottom-row">
+                                            <td>Pink Ladies ($1.00/dozen)<br>10 orders</td>
+                                            <td>
+                                                <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="foo-top-row" >
+                                            <td>ASDA Fruits (2)</td>
+                                            <td><span class="float-right">$45</span></td>
+                                        </tr>
+                                        <tr class="foo-bottom-row" >
+                                            <td>Rosemary Bread ($3.50/loaf)<br>10 orders</td>
+                                            <td>
+                                                <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="foo-bottom-row" >
+                                            <td>Pink Ladies ($1.00/dozen)<br>10 orders</td>
+                                            <td>
+                                                <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--tab3-->
+        <div class="tab-pane fade mt-3" id="cart" role="tabpanel" aria-labelledby="cart-tab">
+            
+            <!--tab nav-->
+            <ul class="nav nav-pills" id="cartTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="cart1-tab" data-toggle="tab" href="#cart1" role="tab" aria-controls="cart1" aria-selected="true">Your Cart</a>
+                </li>
+            </ul>
+
+            <div class="tab-content container mt-3" id="cartTabContent">
+                
+
+                    <div class="container">
+            
+                            <div class="row">
+                                <div class="col-9">
+                                    <table class="table cart-table table-hover">
+                                        <tbody tr-cart-row mytitle="Hello I am Title"></tbody>
+                                        <tbody tr-cart-row mytitle="Hello I am Title"></tbody>
+                                        <tbody tr-cart-row mytitle="Hello I am Title"></tbody>
+                                    </table>
+                                </div>
+                                <div class="col-3">
+                                    <div class="container">
+                                        <div class="row border mb-3">
+                                            <div class="col-12">
+                                                <h6>Checkout Total <span class="float-right">$135.00</span></h6>
+                                                <button class="btn btn-primary btn-row" type="button">Send all orders</button>
+                                                <button class="btn btn-outline-primary btn-row" type="button">Continue shopping</button>
+                                                <button class="btn btn-primary btn-row mt-1 mb-2" type="button">Save this order</button>
+                                            </div>
+                                        </div>
+                                        <div class="row border">
+                                            <div class="col-12">
+                                                <table class="table table-hover">
+                                                    <tr class="foo-top-row" >
+                                                        <td>Budget</td>
+                                                        <td>$0</td>
+                                                    </tr>
+                                                    <tr class="foo-top-row" >
+                                                        <td>Monthly budget</td>
+                                                        <td>$0</td>
+                                                    </tr>
+                                                    <tr class="foo-top-row" >
+                                                        <td>Spend to date</td>
+                                                        <td>$0</td>
+                                                    </tr>
+                                                    <tr class="foo-top-row" >
+                                                        <td>Cost of cart</td>
+                                                        <td>$0</td>
+                                                    </tr>
+                                                    <tr class="foo-top-row" >
+                                                        <td>Budget remaining</td>
+                                                        <td>$0</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+        </div>
+
+    </div>
+
+    
+
+</main><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

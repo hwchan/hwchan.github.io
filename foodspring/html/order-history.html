@@ -1,0 +1,108 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/app.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Foodspring</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="order-history.html">Order History<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Invoices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="supplies.html">Suppliers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Messages</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<main role="main" class="container">
+    <nav class="nav nav-tabs mt-1" id="myTab" role="tablist">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab">Order History</a>
+        <a class="nav-link float-right" style="margin-left:840px" id="cart-tab" data-toggle="tab" href="#cart" role="tab">
+            <i class="fa fa-shopping-cart"></i> <span style="font-size:x-small">Items | $0</span>
+        </a>
+    </nav>
+
+    <div class="tab-content container border" id="myTabContent">
+
+        <!--tab1-->
+        <div class="tab-pane fade show mt-3 active" id="banana" role="tabpanel" ng-model="order" ng-init="order='A'">
+            <history ng-show="order==='A'" content='order'></history>
+            <view-order ng-show="order==='B'" content='order'></view-order>
+        </div>
+
+        <!--tab3-->
+        <div class="tab-pane fade mt-3" id="cart" role="tabpanel">
+            hello i am cart
+        </div>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

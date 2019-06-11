@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary btn-sm float-right" type="button"><i class="fa fa-plus"></i> Add Supplier</button>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <!-- <div class="col-9"> -->
+            <div class="col-2">
+                <label>Order Frequency</label>
+                <select class="form-control form-control-sm">
+                    <option>All</option>
+                    <option>Some</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label>Sales Rep</label>
+                <select class="form-control form-control-sm">
+                    <option>All</option>
+                    <option>Some</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label>Category</label>
+                <select class="form-control form-control-sm">
+                    <option>All</option>
+                    <option>Some</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label>Order Value</label>
+                <select class="form-control form-control-sm">
+                    <option>All</option>
+                    <option>Some</option>
+                </select>
+            </div>
+        <!-- </div> -->
+        <div class="col-4">
+            <br>
+            <button class="btn btn-outline-primary btn-row" type="button">Reset Filters</button>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <th>Supplier Name</th>
+                    <th>Updates <i class="fa fa-question-circle-o icon"></i></th>
+                    <th>Category</th>
+                    <th>Sales Rep</th>
+                    <th>Last Order</th>
+                    <th>Orders</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><a href="#" ng-click="content='C'">Quizno's Bakery</a></td>
+                    <td><i class="fa fa-plus-circle icon text-success"></i></td>
+                    <td>Meats</td>
+                    <td>John Doe</td>
+                    <td>Dec 1, 2019</td>
+                    <td>$250.00</td>
+                    <td>
+                        <button class="btn btn-outline-primary btn-row" type="button">Message</button>
+                        <button class="btn btn-primary btn-row" type="button" ng-click="content='B'">Catalog</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><a href="#">ASDA Fruits</a></td>
+                    <td><i class="fa fa-envelope-o icon text-info"></i></td>
+                    <td>Coffee</td>
+                    <td>John Doe</td>
+                    <td>Dec 1, 2019</td>
+                    <td>$250.00</td>
+                    <td>
+                        <button class="btn btn-outline-primary btn-row" type="button">Message</button>
+                        <button class="btn btn-primary btn-row" type="button" ng-click="content='B'">Catalog</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><a href="#">Apetina 'R Us</a></td>
+                    <td><i class="fa fa-user-plus icon text-warning"></i></td>
+                    <td>Poultry</td>
+                    <td>John Doe</td>
+                    <td>Dec 1, 2019</td>
+                    <td>$250.00</td>
+                    <td>
+                        <button class="btn btn-outline-primary btn-row" type="button">Message</button>
+                        <button class="btn btn-primary btn-row" type="button" ng-click="content='B'">Catalog</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

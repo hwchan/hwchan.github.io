@@ -1,0 +1,65 @@
+<tbody>
+    <tr class="foo-top-row">
+        <td><a href="#">Weekly orders</a></td>
+        <td colspan="3" class="text-center align-middle">
+            <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button" aria-pressed="false">S</button>
+            <button class="btn btn-outline-primary btn-row-toggle active" type="button" data-toggle="button" aria-pressed="true">M</button>
+            <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button" aria-pressed="false">T</button>
+            <button class="btn btn-outline-primary btn-row-toggle active" type="button" data-toggle="button" aria-pressed="true">W</button>
+            <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button" aria-pressed="false">T</button>
+            <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button" aria-pressed="false">F</button>
+            <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button" aria-pressed="false">S</button>
+        </td>
+        <td class="text-right align-middle">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary btn-row dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Weekly
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item f-xs" href="#">Weekly</a>
+                    <a class="dropdown-item f-xs" href="#">Every 2 weeks</a>
+                    <a class="dropdown-item f-xs" href="#">Every 3 weeks</a>
+                    <a class="dropdown-item f-xs" href="#">Monthly</a>
+                </div>
+            </div>
+        </td>
+        <td class="text-right align-middle"></td>
+        <td>
+            <button class="btn btn-outline-danger btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-pencil"></i></button>
+        </td>
+    </tr>
+
+    <!---->
+    <tr class="foo-bottom-row" ng-show="showMe">
+        <td class="align-middle"><a href="#">ASDA Fruits</a></td>
+        <td class="align-middle"><a href="#">Rosemary Bread</a></td>
+        <td class="text-center align-middle">$3.50/loaf</td>
+        <td class="text-center align-middle">-10%/20 orders</td>
+        <td class="text-center align-middle">10 orders</td>
+        <td class="text-center align-middle">$35.00 subtotal</td>
+        <td>
+            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+        </td>
+    </tr>
+    <tr class="foo-bottom-row" ng-show="showMe">
+        <td class="align-middle"></td>
+        <td class="align-middle"><a href="#">Pink Ladies</a></td>
+        <td class="text-center align-middle">$1.00/dozen</td>
+        <td class="text-center align-middle">N/A</td>
+        <td class="text-center align-middle">10 orders</td>
+        <td class="text-center align-middle">$10.00 subtotal</td>
+        <td>
+            <button class="btn btn-outline-primary btn-row float-right" type="button"><i class="fa fa-times"></i></button>
+        </td>
+    </tr>
+
+    <!---->
+    <tr class="foo-expand-row" ng-click="showMe = !showMe">
+        <td colspan="3" class="text-center align-middle"></td>
+        <td class="text-center align-middle"><i ng-class="showMe ? 'fa fa-angle-up fa-xs' : 'fa fa-angle-down fa-xs'" class="fa fa-angle-down fa-xs"></i></td>
+        <td colspan="3" class="text-center align-middle"></td>
+    </tr>
+
+</tbody>

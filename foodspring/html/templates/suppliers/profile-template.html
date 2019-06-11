@@ -1,0 +1,194 @@
+<div class="container">
+    <div class="row">
+        <div class="col-1">
+            <button class="btn btn-outline-primary btn-row" type="button" ng-click="content='A'"><i class="fa fa-chevron-left"></i></button>
+        </div>
+        <div class="col-7">
+            
+                <h6>Quizno's Bakery</h6>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-7 border">
+            
+            <div class="container">
+                <div class="row">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-8">
+                                <h6>Contact Information</h6>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Phone number</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Sales Rep</label>
+                                        <select class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <h6>Operational Information</h6>
+
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        Delivery Days:
+                                        <br>Monday, Wednesday, Saturday
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        Order Cutoff:
+                                        <br>5pm PST 2 days before delivery
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        Order Notifications: 
+                                        <button class="btn btn-outline-primary btn-row-toggle" type="button" data-toggle="button">&nbsp;</button>
+                                    </div>
+                                </div>
+
+                                <h6>Notes</h6>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            
+                            </div>
+                            <div class="col-4">
+                                <h6>Actions</h6>
+                                <div class="form-group">
+                                    <button class="btn btn-outline-primary btn-row form-control mb-2" type="button">Message</button>
+                                    <button class="btn btn-primary btn-row form-control mb-2" type="submit">Save changes</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4">
+            <nav class="nav nav-pills" id="myTab" role="tablist">
+                <a class="nav-link active" id="orderHistory-tab" data-toggle="tab" href="#orderHistory" role="tab">Order History</a>
+                <a class="nav-link" id="invoices-tab" data-toggle="tab" href="#invoices" role="tab">Invoices</a>
+            </nav>
+        
+            <div class="tab-content container border" id="myTabContent2">
+        
+                <!--tab1-->
+                <div class="tab-pane fade show mt-3 active" id="orderHistory" role="tabpanel">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Order #123456</td>
+                                <td>Order date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-success">COMPLETE</td>
+                                <td>Total</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Order #123456</td>
+                                <td>Order date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-success">COMPLETE</td>
+                                <td>Total</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Order #123456</td>
+                                <td>Order date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-warning">DELIVERED</td>
+                                <td>Total</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!--tab2-->
+                <div class="tab-pane fade mt-3" id="invoices" role="tabpanel">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Bill #1234</td>
+                                <td>Due date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-success">PAID</td>
+                                <td>Balance</td>
+                                <td>$0.00</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Bill #1234</td>
+                                <td>Due date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-warning">OUTSTANDING</td>
+                                <td>Balance</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Bill #1234</td>
+                                <td>Due date</td>
+                                <td>Dec 1, 2019</td>
+                            </tr>
+                            <tr class="bottom-row">
+                                <td class="text-success">PAID</td>
+                                <td>Balance</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    
+</div>
